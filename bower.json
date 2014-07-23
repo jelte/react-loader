@@ -6,6 +6,9 @@
     ],
     "license": "MIT",
     "private": false,
+    "main": [
+        "dist/reactjs-loader.js"
+    ],
     "ignore": [
         "**/.*",
         "node_modules",

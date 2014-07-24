@@ -37,7 +37,7 @@ $(document).ready(function() {
         });
         // Join attributes with body json
         if ( element.childNodes.length > 0 ) {
-            if (element.childNodes[0].nodeValue.length > 0) {
+            if (element.childNodes[0].nodeValue.trim().length > 0) {
                 $.extend(attributes, JSON.parse(element.childNodes[0].nodeValue));
             }
         }

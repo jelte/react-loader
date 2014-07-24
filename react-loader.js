@@ -25,7 +25,7 @@ $(document).ready(function() {
     });
 
     // Find all elements and apply React.JS
-    $(Object.keys(elements).join(',')).each(function(index, element) {
+    $(Object.keys(elements).join(',').replace(new RegExp(/\./g),'\\.')).each(function(index, element) {
         var attributes = {};
         // List element attributes
         $(element.attributes).each(function() {

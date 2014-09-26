@@ -47,7 +47,7 @@ $(document).ready(function() {
 
         // Create React.JS component
         React.renderComponent(
-            eval(elements[element.nodeName]+'(attributes)'),
+            eval(elements[element.nodeName.toUpperCase()]+'(attributes)'),
             anchor[0]
         );
         // Remove element

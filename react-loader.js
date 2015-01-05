@@ -46,7 +46,7 @@ $(document).ready(function() {
         anchor.insertAfter(element);
 
         // Create React.JS component
-        React.renderComponent(
+        React.render(
             eval(elements[element.nodeName.toUpperCase()]+'(attributes)'),
             anchor[0]
         );
